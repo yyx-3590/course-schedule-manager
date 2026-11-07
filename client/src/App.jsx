@@ -1,6 +1,7 @@
 import { Navigate, NavLink, Route, Routes } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 import Auth from "./pages/Auth";
+import ServerNotice from "./components/ServerNotice";
 import Courses from "./pages/Courses";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
@@ -29,6 +30,7 @@ export default function App() {
           </div>
         )}
       </header>
+      <ServerNotice />
       <main>
         <Routes>
           <Route path="/login" element={<Auth mode="login" />} />

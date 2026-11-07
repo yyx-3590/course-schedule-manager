@@ -1,0 +1,14 @@
+.server-notice {
+  margin: 0;
+  padding: 0.6rem 1.5rem;
+  background: var(--gold-light);
+  border-bottom: 1px solid var(--gold);
+  color: var(--gold-dark);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media print {
+  .server-notice { display: none; }
+}
